@@ -21,6 +21,7 @@ import javamop.parser.ast.aspectj.ThreadBlockedPointCut;
 import javamop.parser.ast.aspectj.ThreadNamePointCut;
 import javamop.parser.ast.aspectj.ThreadPointCut;
 import javamop.parser.ast.aspectj.WithinPointCut;
+import javamop.parser.ast.aspectj.WithincodePointCut;
 
 public interface PointcutVisitor<R, A> {
 
@@ -49,6 +50,8 @@ public interface PointcutVisitor<R, A> {
 	public R visit(IDPointCut p, A arg);
 
 	public R visit(WithinPointCut p, A arg);
+
+    public R visit(WithincodePointCut p, A arg);
 
 	public R visit(ThreadPointCut p, A arg);
 	

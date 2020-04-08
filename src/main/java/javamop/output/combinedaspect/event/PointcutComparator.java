@@ -99,6 +99,10 @@ public class PointcutComparator {
         return p1.toString().equals(p2.toString());
     }
 
+    public boolean compare(WithincodePointCut p1, WithincodePointCut p2){
+        return p1.toString().equals(p2.toString());
+    }
+
     /**
      * ThreadNamePointCuts are always equal.
      * @param p1 The first pointcut.
